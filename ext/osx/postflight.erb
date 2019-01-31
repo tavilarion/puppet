@@ -107,3 +107,11 @@ elif [ $pgroup_exists == '56' ] && [ $puser_exists == '56' ]; then
 else
   echo "Something went wrong and user creation will need to be done manually"
 fi
+
+
+
+# pxp agent stuff
+
+echo "dsadsadasdasd" > /tmp/ceva.txt
+launchctl unload -w /Library/LaunchDaemons/com.puppetlabs.pxp-agent.plist | tee /tmp/altceva.tst
+
